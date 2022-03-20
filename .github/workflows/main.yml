@@ -1,0 +1,14 @@
+- name: AutML Workflow
+  uses: ZoranPandovski/automl-actions@v1.0.2
+  
+  job_name:
+  runs-on: ubuntu-latest
+  name: IIT SDGP PAL Prediction with ANN
+  steps:
+  - name: Train new model
+    id: train
+    uses: ZoranPandovski/automl-actions@v1.0.0
+    with:
+      dataset: "Dataset2.csv"
+      target: "activity_level"
+      when: "{gender_binary:1,age:21,weight(kg):57.585133,height(m):1.630754,BMI:21.653766,BMR:1386.345,ideal_weight:58.505894}"
