@@ -1,4 +1,4 @@
-- name: AutML Workflow
+  name: AutML Workflow
   uses: ZoranPandovski/automl-actions@v1.0.2
   
   job_name:
